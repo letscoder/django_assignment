@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Issue</title>
+</head>
+<body>
+    <h1>Create Issue</h1>
+
+    <form method="post" action="{% url 'create_issue' %}">
+        <h5>UserId</h5>
+        <input type="text" name="userID"><br>
+        <h5>Problem Faced</h5>
+        <textarea name="problem"></textarea><br>
+        <h5>Location</h5>
+        <textarea name="location"></textarea><br>
+        <h5>Time</h5>
+        <input type="time" name="time">
+
+
+
+
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
